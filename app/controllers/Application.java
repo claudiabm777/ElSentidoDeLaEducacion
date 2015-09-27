@@ -45,7 +45,7 @@ public class Application extends Controller {
         try {
             Email email = new Email();
             email.setSubject(subject);
-            email.setFrom("CopaGrader <copa.grader@gmail.com>");
+            email.setFrom("CopaGrader <sentido.educ@gmail.com>");
             email.addTo("TO <"+subject+">");
             //email.addTo("<claudiabm777@gmail.com>");
             //System.out.println(email.getTo().toString());
