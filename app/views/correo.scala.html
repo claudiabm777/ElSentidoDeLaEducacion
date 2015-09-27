@@ -1,0 +1,152 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Generous a Charity Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Generous Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="@routes.Assets.versioned("css/bootstrap.css")" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href="@routes.Assets.versioned("css/style.css")" rel='stylesheet' type='text/css' />
+    <script src="@routes.Assets.versioned("js/jquery.min.js")"> </script>
+    <!--webfonts-->
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One|Open+Sans:400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+<!--start-home-->
+<div id="home" class="header" id="#inicio">
+    <div class="header-top">
+        <div class="container">
+            <div class="logo">
+                <a href="@routes.Application.index()"><h1>El sentido de la educaci<span>ón</span></h1></a>
+            </div>
+
+            <div class="clearfix"></div>
+            <span class="menu"></span>
+            <div class="top-menu">
+                <ul class="cl-effect-16">
+                    <li><a class="active" href="@routes.Application.index()" data-hover="Inicio">Inicio</a></li>
+                    <li><a href="#about" data-hover="Idea">Idea</a></li>
+                    <li><a href="#ventajas" data-hover="Ventajas">Ventajas</a></li>
+                    <li><a href="#como" data-hover="¿Cómo influye?">¿Cómo influye?</a></li>
+                    <li><a href="#mooc" data-hover="MOOC">MOOC</a></li>
+                    <li><a href="@routes.Application.personas()" data-hover="Personas">Personas</a></li>
+                    <li><a href="@routes.Application.correo()" data-hover="Comparte este mensaje">Comparte este mensaje</a></li>
+                    <div class="clearfix"> </div>
+                </ul>
+            </div>
+            <!-- script-for-menu -->
+            <script>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-menu ul").slideToggle(300);
+						});
+					});
+				</script>
+    <!--End-top-nav-script-->
+    </div>
+    </div>
+
+		<div class="clearfix"></div>
+			<div class="banner two">
+			</div>
+   </div>
+   <!--contact-->
+   <div class="contact">
+	 <div class="container">
+		<h3 class="tittle">Comparte nuestro mensaje</h3>
+			<div class="contact-form">
+					<div class="col-md-6 contact-grid">
+                        @helper.form(action = routes.Application.correo2) {
+					<form>
+						<p class="your-para">Tu email:</p>
+						<input type="text" name="tu" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+						<p class="your-para">El email de tu amigo:</p>
+						<input type="text" name="amigo" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+						<p class="your-para">Escribe un mensaje:</p>
+						<textarea cols="77" name="msj" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}"></textarea>
+						<div class="send">
+							<input type="submit" value="Send" >
+						</div>
+					</form>
+                        }
+				</div>
+				<div class="col-md-6 contact-in">
+					<p class="sed-para"> ¡Comparte esta página web con tus amigos y transmite nuestro mensaje!</p>
+					<p class="para1">La idea de este espacio es que compartas este sitio web con tus conocidos, con el fin de que ellos también conozcan un poco más sobre el sentido de la educación en la tecnología. Se enviará un correo a la persona que quieras con la información de esta página. ¡Gracias por visitarnos!</p>
+
+				</div>
+				<div class="clearfix"> </div>
+			   </div>
+
+	</div>
+</div>
+    <div class="footer text-center">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-4 footer-text">
+                    <h3>Acerca de este trabajo</h3>
+                    <p>Esta página web fue implementada para el curso El sentido de la educación, de la Universidad de los Andes como proyecto reflexivo.</p>
+                    <p>Fue implementado por Claudia Daniela Bedoya Motta, estudiante de Ingeniería Industrial e Ingeniería de Sistemas.</p>
+                </div>
+                <div class="">
+                    <h3></h3>
+                    <div class="">
+                        <div class="flickr-grid">
+                            <a href="#"><img src="@routes.Assets.versioned("images/clau.jpg")" alt=""/></a>
+                        </div>
+
+                        <div class=""> </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="clearfix"> </div>
+            </div>
+            <div class="copy">
+                <p>&copy; El sentido de la educación 2015-20 | Implementado por Claudia Bedoya </p>
+            </div>
+            <!--footer-->
+	</div>
+</div>
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>
